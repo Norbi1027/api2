@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css"
+        integrity="sha512-72OVeAaPeV8n3BdZj7hOkaPSEk/uwpDkaGyP4W2jSzAC8tfiO4LMEDWoL3uFp5mcZu+8Eehb4GhZWFwvrss69Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"
+        integrity="sha512-Sct/LCTfkoqr7upmX9VZKEzXuRk5YulFoDTunGapYJdlCwA+Rl4RhgcPCLf7awTNLmIVrszTPNUFu4MSesep5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+    <link rel="stylesheet" href="dolgozok.css">
+    <script src="dolgozok.js"></script>
+ 
+    <title>Dolgozók nyilvántartása</title>
+</head>
+ 
+<body>
+    <header>
+        <h1>Dolgozók nyilvántartása</h1>
+    </header>
+
+    <div class="container">
+        <form>
+        <div class="row">
+            <div class="col-7">
+                <label for="nev" class="form-label">Név</label>
+                <input type="text" class="form-control" id="nev" name="nev">
+            </div>
+            <div class="col-7">
+                <label for="reszleg" class="form-label">Részleg</label>
+                <input type="text" class="form-control" id="reszleg" name="reszleg">
+            </div>
+        </div>
+        <div class="row">
+            <label for="belepesev" class="form-label">Neme</label>
+            <select id="neme" class="form-select col-4" aria-label="Default select example">
+                <option value="férfi">Férfi</option>
+                <option value="nő">Nő</option>
+              </select>
+              <div class="col-4">
+                <label for="belepesev" class="form-label">Belépési év</label>
+                <input type="text" class="form-control" id="belepesev" name="belepesev">
+              </div>
+              <div class="col-4">
+                <label for="ber" class="form-label">Bér</label>
+                <input type="text" class="form-control" id="ber" name="ber">
+              </div>
+        </div>
+            <div class="row">
+              <div class="col-4 m-5">
+                <button id="hozzaad" type="button" class="btn btn-primary">Hozzáad</button>
+                <button id="megjelenit" type="button" class="btn btn-warning">Megjelenít</button>
+
+              </div>
+            </div>
+        </form>
+        <div >
+            <table class="table table-striped" id="dolgozokTabla">
+
+            </table>
+        </div>
+    </div>
+   
+</body>
+ 
+</html>
